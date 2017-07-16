@@ -3,14 +3,17 @@ const bodyParser = require('body-parser');
 const resume = require('./resume');
 const morgan = require('morgan');
 const app = express();
+const cors = require('cors');
 
 let r = new resume('./templates/index.html');
 
-app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
 app.use(morgan('tiny'));
+app.use(cors());
 
 app.post('/generate', (req, res) => {
     let data = req.body;
+    console.log(data);
     let result = r.compile(data);
     res.send(result);
 });
