@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
+body {
+  background: #cccccc;
+}
+
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+}
+
+page[size="A4"] {
+  width: 21cm;
+  height: 29.7cm;
+}
+
+page[size="A4"][layout="portrait"] {
+  width: 29.7cm;
+  height: 21cm;
+}
+
+@media print {
+  body, page {
+    margin: 0;
+    box-shadow: 0;
+  }
+}
+.container {
+  padding: 3em;
+}
+
+a {
+  color: inherit;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0.3em 0;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+h1 {
+  letter-spacing: 0.15em;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+h2 {
+  letter-spacing: 0.15em;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+h3 {
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+h4 {
+  letter-spacing: 0.1em;
+  font-size: 8pt;
+  color: #333;
+}
+
+a, p {
+  margin: 0.5em 0 0 0;
+  font-size: 8pt;
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+.sub-section {
+  padding: 1.2em 0 0 1.2em;
+}
+
+.section {
+  padding-bottom: 2em;
+  padding-right: 1em;
+}
+
+.section:last-child {
+  padding-bottom: 0;
+}
+
+.header {
+  background-color: #333;
+  padding: 2em;
+}
+
+.header h1 {
+  color: #eee;
+}
+
+.header h2 {
+  font-weight: 300;
+  color: #ccc;
+}
+
+.header a {
+  font-size: 0.8em;
+  color: #ccc;
+}
+
+.flexcontainer {
+  padding: 1em;
+  margin: 2em;
+  display: flex;
+  flex-flow: column wrap;
+  height: 78%;
+}
+
+.section {
+  box-sizing: border-box;
+  width: 50%;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{author.name}} CV</title>
+    <style type="text/css">
+    body {
+        margin: 40px auto;
+        max-width: 650px;
+        line-height: 1.6;
+        font-size: 18px;
+        color: #444;
+        padding: 0 10px
+    }
+
+    h1,
+    h2,
+    h3 {
+        line-height: 1.2
+    }
+    </style>
+</head>
+
+<body>
+	<h1>{{author.name}}</h1>
+	<h2>{{author.role}}</h2>
+
+	{{#each sections}}
+		<h2>{{@key}}</h2>
+		{{#each this}}
+			<h3>{{this.title}}</h3>
+			<h4>{{this.subtitle}}</h4>
+			<p>{{this.description}}</p>
+		{{/each}}
+	{{/each}}
+
+</body>
+</html>

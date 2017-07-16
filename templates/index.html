@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>{{author.name}} CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="css/style.css">  
+</head>
+<body>
+  <page size="A4">
+    <div class="header">
+      <h1>{{author.name}}</h1>
+      <h2>{{author.role}}</h2>
+    </div>
+    <div class="flexcontainer">
+      {{#each sections}} 
+      <div class="section">
+        <h2>{{@key}}</h2>
+        {{#each this}}
+        <div class="sub-section">
+          <h3>{{this.title}}</h3>
+          <h4>{{this.subtitle}}</h4>
+          <p>{{this.description}}
+        </div>
+        {{/each}}
+      </div>
+      {{/each}}
+     </div>
+    </div>
+  </page>
+</body>
+</html>
