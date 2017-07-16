@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Splitscreen clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  
+<div class="container u-full-width u-max-full-width">
+  <div class="row">
+    <div class="one-half column left">
+      <iframe id="preview-frame" name="preview-frame" frameborder="0" seamless="seamless"></iframe>
+    </div>
+    <div class="one-half column right">
+      <h2>Welcome to jsoncv, focus on the content</h2>
+      <p>Just paste your JSON formatted CV into the box below, if you need help checkout the guide here</p>
+      <form>
+        <textarea class="u-full-width" id="cv-text-area" placeholder="Paste your CV here"></textarea>
+        <input class="button-primary" type="button" value="submit" onClick="submitCv()"/>
+        <input class="button-primary" type="button" value="download" onClick="downloadPdf()"/>
+      </form>
+    </div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

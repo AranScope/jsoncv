@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600");
+* {
+  box-sizing: border-box;
+}
+
+body, textarea {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  color: #8b8f94;
+  line-height: 1.65;
+}
+
+textarea {
+  font-size: 1em;
+}
+
+.column {
+  height: 100vh;
+  margin: 0;
+}
+
+.right {
+  padding: 5em;
+}
+
+.left {
+  background-color: #eee;
+}
+
+#cv-text-area {
+  height: 50vh;
+}
+
+#preview-frame {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}

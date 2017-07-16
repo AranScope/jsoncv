@@ -1,0 +1,11 @@
+.container.u-full-width.u-max-full-width
+  .row
+    .one-half.column.left
+      iframe(id="preview-frame" name="preview-frame" frameborder="0" seamless="seamless")
+    .one-half.column.right
+      h2 Welcome to jsoncv, focus on the content
+      p Just paste your JSON formatted CV into the box below, if you need help checkout the guide here
+      form
+        textarea.u-full-width#cv-text-area(placeholder="Paste your CV here")
+        input.button-primary(type="button" value="submit" onClick="submitCv()")
+        input.button-primary(type="button" value="download" onClick="downloadPdf()")
