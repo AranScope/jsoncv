@@ -10,16 +10,13 @@ let r = new resume('./templates/index.html');
 app.use(bodyParser.urlencoded());
 app.use(morgan('tiny'));
 app.use(cors());
+app.use(express.static('web'));
 
 app.post('/generate', (req, res) => {
     let data = req.body;
     console.log(data);
     let result = r.compile(data);
     res.send(result);
-});
-
-app.get('/', (req, res) => {
-    res.send('hello');
 });
 
 let port = process.env.PORT || 3001;
