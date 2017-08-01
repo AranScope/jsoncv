@@ -2,6 +2,8 @@
 [Link to the project](https://jsoncv.aran.site)
 Store your CV in JSON and don't look back!
 
+Head over to the link above and paste in the JSON below. Sections can have any title, each subsection must have a title subtitle and description. It's simple and flexible.
+
 ```
 {
 	
